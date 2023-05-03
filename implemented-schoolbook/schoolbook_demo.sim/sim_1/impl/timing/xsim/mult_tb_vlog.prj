@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"mult_tb_time_impl.v" \
+"../../../../../schoolbook_demo.srcs/sim_1/new/mult_tb.v" \
+
+# Do not sort compile order
+nosort

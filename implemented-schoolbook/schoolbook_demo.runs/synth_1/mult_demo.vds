@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue May  2 23:42:15 2023
+# Process ID: 3000
+# Current directory: C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.runs/synth_1
+# Command line: vivado.exe -log mult_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_demo.tcl
+# Log file: C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.runs/synth_1/mult_demo.vds
+# Journal file: C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.runs/synth_1\vivado.jou
+# Running On: DESKTOP-HOE36TI, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 2, Host memory: 8393 MB
+#-----------------------------------------------------------
+source mult_demo.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 386.113 ; gain = 66.848
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/utils_1/imports/synth_1/mult_unsigned.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/utils_1/imports/synth_1/mult_unsigned.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mult_demo -part xcku5p-ffvb676-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23268
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1848.742 ; gain = 369.629
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mult_demo' [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/sources_1/new/mult-demo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mult_unsigned' [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/sources_1/new/mult-unsigned.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult_unsigned' (0#1) [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/sources_1/new/mult-unsigned.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult_demo' (0#1) [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/sources_1/new/mult-demo.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1938.012 ; gain = 458.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1938.012 ; gain = 458.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1938.012 ; gain = 458.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1938.012 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/constrs_1/new/mult_unsigned.xdc]
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2037.145 ; gain = 19.004
+Finished Parsing XDC File [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/constrs_1/new/mult_unsigned.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/constrs_1/new/mult_unsigned.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mult_demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mult_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2037.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2037.145 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2037.145 ; gain = 558.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2037.145 ; gain = 558.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 2037.145 ; gain = 558.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2037.145 ; gain = 558.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  12 Input  128 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               40 Bit    Registers := 12    
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'm12/M_reg[3]' and it is trimmed from '40' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm12/M_reg[2]' and it is trimmed from '40' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm12/M_reg[1]' and it is trimmed from '40' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.srcs/sources_1/new/mult-unsigned.v:38]
+DSP Report: Generating DSP m2/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m2/rB_reg is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/M_reg[0] is absorbed into DSP m2/M_reg[2].
+DSP Report: register m1/rA_reg is absorbed into DSP m2/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/M_reg[2] is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/M_reg[1] is absorbed into DSP m2/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m2/M_reg[2].
+DSP Report: Generating DSP m3/M_reg[2], operation Mode is: (ACIN2*B'')'.
+DSP Report: register m3/rB_reg is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/M_reg[0] is absorbed into DSP m3/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/M_reg[2] is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/M_reg[1] is absorbed into DSP m3/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m3/M_reg[2].
+DSP Report: Generating DSP m4/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m4/rB_reg is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/M_reg[0] is absorbed into DSP m4/M_reg[2].
+DSP Report: register m1/rA_reg is absorbed into DSP m4/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/M_reg[2] is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/M_reg[1] is absorbed into DSP m4/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m4/M_reg[2].
+DSP Report: Generating DSP m5/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m1/rB_reg is absorbed into DSP m5/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/rA_reg is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/M_reg[0] is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/M_reg[2] is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/M_reg[1] is absorbed into DSP m5/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m5/M_reg[2].
+DSP Report: Generating DSP m6/M_reg[2], operation Mode is: (ACIN2*B'')'.
+DSP Report: register m2/rB_reg is absorbed into DSP m6/M_reg[2].
+DSP Report: register m5/M_reg[0] is absorbed into DSP m6/M_reg[2].
+DSP Report: register m2/M_reg[0] is absorbed into DSP m6/M_reg[2].
+DSP Report: register m6/M_reg[2] is absorbed into DSP m6/M_reg[2].
+DSP Report: register m6/M_reg[1] is absorbed into DSP m6/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m6/M_reg[2].
+DSP Report: Generating DSP m7/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m3/rB_reg is absorbed into DSP m7/M_reg[2].
+DSP Report: register m3/M_reg[0] is absorbed into DSP m7/M_reg[2].
+DSP Report: register m5/rA_reg is absorbed into DSP m7/M_reg[2].
+DSP Report: register m5/M_reg[0] is absorbed into DSP m7/M_reg[2].
+DSP Report: register m7/M_reg[2] is absorbed into DSP m7/M_reg[2].
+DSP Report: register m7/M_reg[1] is absorbed into DSP m7/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m7/M_reg[2].
+DSP Report: Generating DSP m8/M_reg[2], operation Mode is: (A''*BCIN2)'.
+DSP Report: register m4/M_reg[0] is absorbed into DSP m8/M_reg[2].
+DSP Report: register m5/rA_reg is absorbed into DSP m8/M_reg[2].
+DSP Report: register m5/M_reg[0] is absorbed into DSP m8/M_reg[2].
+DSP Report: register m8/M_reg[2] is absorbed into DSP m8/M_reg[2].
+DSP Report: register m8/M_reg[1] is absorbed into DSP m8/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m8/M_reg[2].
+DSP Report: Generating DSP m11/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m3/rB_reg is absorbed into DSP m11/M_reg[2].
+DSP Report: register m3/M_reg[0] is absorbed into DSP m11/M_reg[2].
+DSP Report: register m9/rA_reg is absorbed into DSP m11/M_reg[2].
+DSP Report: register m9/M_reg[0] is absorbed into DSP m11/M_reg[2].
+DSP Report: register m11/M_reg[2] is absorbed into DSP m11/M_reg[2].
+DSP Report: register m11/M_reg[1] is absorbed into DSP m11/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m11/M_reg[2].
+DSP Report: Generating DSP m9/M_reg[2], operation Mode is: (ACIN2*B'')'.
+DSP Report: register m9/M_reg[0] is absorbed into DSP m9/M_reg[2].
+DSP Report: register m1/rB_reg is absorbed into DSP m9/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m9/M_reg[2].
+DSP Report: register m9/M_reg[2] is absorbed into DSP m9/M_reg[2].
+DSP Report: register m9/M_reg[1] is absorbed into DSP m9/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m9/M_reg[2].
+DSP Report: Generating DSP m10/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m9/rA_reg is absorbed into DSP m10/M_reg[2].
+DSP Report: register m9/M_reg[0] is absorbed into DSP m10/M_reg[2].
+DSP Report: register m2/rB_reg is absorbed into DSP m10/M_reg[2].
+DSP Report: register m2/M_reg[0] is absorbed into DSP m10/M_reg[2].
+DSP Report: register m10/M_reg[2] is absorbed into DSP m10/M_reg[2].
+DSP Report: register m10/M_reg[1] is absorbed into DSP m10/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m10/M_reg[2].
+DSP Report: Generating DSP m12/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m4/rB_reg is absorbed into DSP m12/M_reg[2].
+DSP Report: register m4/M_reg[0] is absorbed into DSP m12/M_reg[2].
+DSP Report: register m9/rA_reg is absorbed into DSP m12/M_reg[2].
+DSP Report: register m9/M_reg[0] is absorbed into DSP m12/M_reg[2].
+DSP Report: register m12/M_reg[2] is absorbed into DSP m12/M_reg[2].
+DSP Report: register m12/M_reg[1] is absorbed into DSP m12/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m12/M_reg[2].
+DSP Report: Generating DSP m1/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m1/rB_reg is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/rA_reg is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[2] is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[1] is absorbed into DSP m1/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m1/M_reg[2].
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2037.145 ; gain = 558.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_unsigned | (A''*B'')'   | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (ACIN2*B'')' | 24     | 16     | -      | -      | 40     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'   | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'   | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (ACIN2*B'')' | 24     | 16     | -      | -      | 40     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'   | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*BCIN2)' | 24     | 16     | -      | -      | 40     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'   | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (ACIN2*B'')' | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'   | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'   | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'   | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++--------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 2430.832 ; gain = 951.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 2431.133 ; gain = 952.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 2450.215 ; gain = 971.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 2462.191 ; gain = 983.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 2462.191 ; gain = 983.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 2462.191 ; gain = 983.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 2462.191 ; gain = 983.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 2462.191 ; gain = 983.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 2462.191 ; gain = 983.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_unsigned | ((A''*B'')')' | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A'*B'')')'  | 0      | 16     | -      | -      | 40     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A'*B'')')'  | 0      | 16     | -      | -      | 40     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 24     | 16     | -      | -      | 40     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B')')'  | 24     | 0      | -      | -      | 40     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A'*B'')')'  | 0      | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
++--------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |CARRY8          |    42|
+|3     |DSP_ALU         |    12|
+|4     |DSP_A_B_DATA    |    12|
+|9     |DSP_C_DATA      |    12|
+|10    |DSP_MULTIPLIER  |    12|
+|11    |DSP_M_DATA      |    12|
+|12    |DSP_OUTPUT      |    12|
+|13    |DSP_PREADD      |    12|
+|14    |DSP_PREADD_DATA |    12|
+|15    |LUT2            |   126|
+|16    |LUT3            |    82|
+|17    |LUT4            |    76|
+|18    |LUT5            |    77|
+|19    |LUT6            |    85|
+|20    |FDRE            |   704|
+|21    |IBUF            |   129|
+|22    |OBUF            |   128|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 2462.191 ; gain = 983.078
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:12 . Memory (MB): peak = 2462.191 ; gain = 883.945
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 2462.191 ; gain = 983.078
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2474.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 184 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2499.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 142 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 12 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 129 instances
+
+Synth Design complete, checksum: 9b0d640a
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:44 . Memory (MB): peak = 2499.547 ; gain = 2088.566
+INFO: [Common 17-1381] The checkpoint 'C:/Users/amcen/Documents/capstone project vivado files/schoolbook_demo/schoolbook_demo.runs/synth_1/mult_demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mult_demo_utilization_synth.rpt -pb mult_demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  2 23:44:17 2023...
