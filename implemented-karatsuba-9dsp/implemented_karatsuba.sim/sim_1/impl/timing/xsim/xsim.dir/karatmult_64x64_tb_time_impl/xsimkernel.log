@@ -1,0 +1,7 @@
+Running: xsim.dir/karatmult_64x64_tb_time_impl/xsimk.exe -simmode gui -wdb karatmult_64x64_tb_time_impl.wdb -simrunnum 0 -socket 60885
+Design successfully loaded
+Design Loading Memory Usage: 308468 KB (Peak: 308468 KB)
+Design Loading CPU Usage: 1406 ms
+Simulation completed
+Simulation Memory Usage: 320944 KB (Peak: 320944 KB)
+Simulation CPU Usage: 3905 ms

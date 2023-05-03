@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sim_1/new/karatmult_64x64_tb.v,1681275931,verilog,,,,karatmult_64x64_tb,,,,,,,,
+C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sources_1/new/karatmult_64x64.v,1681276366,verilog,,C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sources_1/new/mult_16x16.v,,karatmult_64x64,,,,,,,,
+C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sources_1/new/mult_16x16.v,1681257267,verilog,,C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sources_1/new/mult_17x17.v,,mult_16x16,,,,,,,,
+C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sources_1/new/mult_17x17.v,1681257332,verilog,,C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sources_1/new/mult_18x18.v,,mult_17x17,,,,,,,,
+C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sources_1/new/mult_18x18.v,1681257362,verilog,,C:/Users/amcen/Documents/capstone project vivado files/implemented_karatsuba/implemented_karatsuba.srcs/sim_1/new/karatmult_64x64_tb.v,,mult_18x18,,,,,,,,

@@ -1,0 +1,402 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue May  2 20:32:00 2023
+# Process ID: 4524
+# Current directory: C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.runs/synth_1
+# Command line: vivado.exe -log mult_demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_demo.tcl
+# Log file: C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.runs/synth_1/mult_demo.vds
+# Journal file: C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.runs/synth_1\vivado.jou
+# Running On: DESKTOP-HOE36TI, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 2, Host memory: 8393 MB
+#-----------------------------------------------------------
+source mult_demo.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 386.047 ; gain = 58.461
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/utils_1/imports/synth_1/mult_unsigned.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/utils_1/imports/synth_1/mult_unsigned.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mult_demo -part xcku5p-ffvb676-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13412
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1849.531 ; gain = 371.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mult_demo' [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-demo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mult_unsigned' [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult_unsigned' (0#1) [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mult_demo' (0#1) [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-demo.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1940.375 ; gain = 461.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1940.375 ; gain = 461.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1940.375 ; gain = 461.875
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1940.375 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/constrs_1/new/mult_unsigned.xdc]
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1998.070 ; gain = 20.922
+Finished Parsing XDC File [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/constrs_1/new/mult_unsigned.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/constrs_1/new/mult_unsigned.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mult_demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mult_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1998.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1998.070 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1998.070 ; gain = 519.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1998.070 ; gain = 519.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1998.070 ; gain = 519.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1998.070 ; gain = 519.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   7 Input  128 Bit       Adders := 1     
+	   4 Input   34 Bit       Adders := 2     
+	   5 Input   34 Bit       Adders := 2     
+	   7 Input   34 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 12    
++---Registers : 
+	              128 Bit    Registers := 1     
+	               41 Bit    Registers := 10    
+	               34 Bit    Registers := 6     
+	               32 Bit    Registers := 4     
+	               17 Bit    Registers := 22    
+	               16 Bit    Registers := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'm7/M_reg[3]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm7/M_reg[2]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm7/M_reg[1]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm5/M_reg[3]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm5/M_reg[2]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm5/M_reg[1]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm4/M_reg[3]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm4/M_reg[2]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm4/M_reg[1]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm0/M_reg[3]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm0/M_reg[2]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm0/M_reg[1]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm9/M_reg[3]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm9/M_reg[2]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm9/M_reg[1]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm8/M_reg[3]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm8/M_reg[2]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm8/M_reg[1]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm3/M_reg[3]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm3/M_reg[2]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm3/M_reg[1]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm6/M_reg[3]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm6/M_reg[2]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm6/M_reg[1]' and it is trimmed from '41' to '34' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm2/M_reg[3]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm2/M_reg[2]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm2/M_reg[1]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm1/M_reg[3]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm1/M_reg[2]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm1/M_reg[1]' and it is trimmed from '41' to '32' bits. [C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v:38]
+DSP Report: Generating DSP m0/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m0/rB_reg is absorbed into DSP m0/M_reg[2].
+DSP Report: register m0/M_reg[0] is absorbed into DSP m0/M_reg[2].
+DSP Report: register m0/rA_reg is absorbed into DSP m0/M_reg[2].
+DSP Report: register m0/M_reg[0] is absorbed into DSP m0/M_reg[2].
+DSP Report: register m0/M_reg[2] is absorbed into DSP m0/M_reg[2].
+DSP Report: register m0/M_reg[1] is absorbed into DSP m0/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m0/M_reg[2].
+DSP Report: Generating DSP m1/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m1/rB_reg is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/rA_reg is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[0] is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[2] is absorbed into DSP m1/M_reg[2].
+DSP Report: register m1/M_reg[1] is absorbed into DSP m1/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m1/M_reg[2].
+DSP Report: Generating DSP m4/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m4/rB_reg is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/M_reg[0] is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/rA_reg is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/M_reg[0] is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/M_reg[2] is absorbed into DSP m4/M_reg[2].
+DSP Report: register m4/M_reg[1] is absorbed into DSP m4/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m4/M_reg[2].
+DSP Report: Generating DSP m5/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m5/rB_reg is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/M_reg[0] is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/rA_reg is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/M_reg[0] is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/M_reg[2] is absorbed into DSP m5/M_reg[2].
+DSP Report: register m5/M_reg[1] is absorbed into DSP m5/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m5/M_reg[2].
+DSP Report: Generating DSP m2/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m2/rB_reg is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/M_reg[0] is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/rA_reg is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/M_reg[0] is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/M_reg[2] is absorbed into DSP m2/M_reg[2].
+DSP Report: register m2/M_reg[1] is absorbed into DSP m2/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m2/M_reg[2].
+DSP Report: Generating DSP m7/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m7/rB_reg is absorbed into DSP m7/M_reg[2].
+DSP Report: register m7/M_reg[0] is absorbed into DSP m7/M_reg[2].
+DSP Report: register m7/rA_reg is absorbed into DSP m7/M_reg[2].
+DSP Report: register m7/M_reg[0] is absorbed into DSP m7/M_reg[2].
+DSP Report: register m7/M_reg[2] is absorbed into DSP m7/M_reg[2].
+DSP Report: register m7/M_reg[1] is absorbed into DSP m7/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m7/M_reg[2].
+DSP Report: Generating DSP m3/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m3/rB_reg is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/M_reg[0] is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/rA_reg is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/M_reg[0] is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/M_reg[2] is absorbed into DSP m3/M_reg[2].
+DSP Report: register m3/M_reg[1] is absorbed into DSP m3/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m3/M_reg[2].
+DSP Report: Generating DSP m6/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m6/rB_reg is absorbed into DSP m6/M_reg[2].
+DSP Report: register m6/M_reg[0] is absorbed into DSP m6/M_reg[2].
+DSP Report: register m6/rA_reg is absorbed into DSP m6/M_reg[2].
+DSP Report: register m6/M_reg[0] is absorbed into DSP m6/M_reg[2].
+DSP Report: register m6/M_reg[2] is absorbed into DSP m6/M_reg[2].
+DSP Report: register m6/M_reg[1] is absorbed into DSP m6/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m6/M_reg[2].
+DSP Report: Generating DSP m8/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m8/rB_reg is absorbed into DSP m8/M_reg[2].
+DSP Report: register m8/M_reg[0] is absorbed into DSP m8/M_reg[2].
+DSP Report: register m8/rA_reg is absorbed into DSP m8/M_reg[2].
+DSP Report: register m8/M_reg[0] is absorbed into DSP m8/M_reg[2].
+DSP Report: register m8/M_reg[2] is absorbed into DSP m8/M_reg[2].
+DSP Report: register m8/M_reg[1] is absorbed into DSP m8/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m8/M_reg[2].
+DSP Report: Generating DSP m9/M_reg[2], operation Mode is: (A''*B'')'.
+DSP Report: register m9/rB_reg is absorbed into DSP m9/M_reg[2].
+DSP Report: register m9/M_reg[0] is absorbed into DSP m9/M_reg[2].
+DSP Report: register m9/rA_reg is absorbed into DSP m9/M_reg[2].
+DSP Report: register m9/M_reg[0] is absorbed into DSP m9/M_reg[2].
+DSP Report: register m9/M_reg[2] is absorbed into DSP m9/M_reg[2].
+DSP Report: register m9/M_reg[1] is absorbed into DSP m9/M_reg[2].
+DSP Report: operator p_0_out is absorbed into DSP m9/M_reg[2].
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1998.070 ; gain = 519.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_unsigned | (A''*B'')'  | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | (A''*B'')'  | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 2440.371 ; gain = 961.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 2484.945 ; gain = 1006.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mult_unsigned | ((A''*B'')')' | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 16     | 16     | -      | -      | 32     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|mult_unsigned | ((A''*B'')')' | 17     | 17     | -      | -      | 34     | 2    | 2    | -    | -    | -     | 1    | 1    | 
++--------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |CARRY8          |    92|
+|3     |DSP_ALU         |    10|
+|4     |DSP_A_B_DATA    |    10|
+|5     |DSP_C_DATA      |    10|
+|6     |DSP_MULTIPLIER  |    10|
+|7     |DSP_M_DATA      |    10|
+|8     |DSP_OUTPUT      |    10|
+|9     |DSP_PREADD      |    10|
+|10    |DSP_PREADD_DATA |    10|
+|11    |LUT1            |     3|
+|12    |LUT2            |   299|
+|13    |LUT3            |   224|
+|14    |LUT4            |   139|
+|15    |LUT5            |   147|
+|16    |LUT6            |   130|
+|17    |FDRE            |  1124|
+|18    |IBUF            |   129|
+|19    |OBUF            |   128|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:13 . Memory (MB): peak = 2494.004 ; gain = 957.809
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 2494.004 ; gain = 1015.504
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 2505.887 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 232 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'mult_demo' is not ideal for floorplanning, since the cellview 'mult_demo' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2520.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 140 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 10 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 129 instances
+
+Synth Design complete, checksum: 2e5d0ec
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:41 . Memory (MB): peak = 2520.625 ; gain = 2109.727
+INFO: [Common 17-1381] The checkpoint 'C:/Users/amcen/Documents/capstone project vivado files/implemented-karatsuba-10dsp/karatsuba_demo/karatsuba_demo.runs/synth_1/mult_demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mult_demo_utilization_synth.rpt -pb mult_demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  2 20:33:58 2023...

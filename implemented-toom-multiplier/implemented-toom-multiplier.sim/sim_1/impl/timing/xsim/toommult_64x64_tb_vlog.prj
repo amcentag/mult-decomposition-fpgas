@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"toommult_64x64_tb_time_impl.v" \
+"../../../../../implemented-toom-multiplier.srcs/sim_1/new/toommult_64x32_tb.v" \
+
+# Do not sort compile order
+nosort

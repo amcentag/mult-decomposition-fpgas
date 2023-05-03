@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/GT Classes Materials/ECE/4872/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_demo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/GT Classes Materials/ECE/4872/karatsuba_demo/karatsuba_demo.srcs/sources_1/new/mult-unsigned.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_unsigned
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/GT Classes Materials/ECE/4872/karatsuba_demo/karatsuba_demo.srcs/sim_1/new/mult_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_tb

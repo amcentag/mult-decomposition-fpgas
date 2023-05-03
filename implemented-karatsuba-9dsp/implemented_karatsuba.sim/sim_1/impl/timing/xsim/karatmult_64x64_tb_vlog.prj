@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"karatmult_64x64_tb_time_impl.v" \
+"../../../../../implemented_karatsuba.srcs/sim_1/new/karatmult_64x64_tb.v" \
+
+# Do not sort compile order
+nosort

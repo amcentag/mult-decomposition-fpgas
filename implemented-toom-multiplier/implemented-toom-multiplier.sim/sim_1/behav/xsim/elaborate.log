@@ -1,0 +1,21 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toommult_64x64_tb_behav xil_defaultlib.toommult_64x64_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 42 differs from formal bit length 43 for port 'r' [C:/Users/amcen/Documents/capstone project vivado files/implemented-toom-multiplier/implemented-toom-multiplier.srcs/sources_1/new/toommult_64x32.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mult_16x16
+Compiling module xil_defaultlib.lmult_8x16
+Compiling module xil_defaultlib.pmult_24x16
+Compiling module xil_defaultlib.uns_mult_26x17
+Compiling module xil_defaultlib.s_mult_26x17
+Compiling module xil_defaultlib.toommult_64x32
+Compiling module xil_defaultlib.mult_64x64
+Compiling module xil_defaultlib.toommult_64x64_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot toommult_64x64_tb_behav
