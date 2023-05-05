@@ -1,0 +1,341 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue May  2 05:05:58 2023
+# Process ID: 26724
+# Current directory: C:/Users/gabri/Comba_Karatsuba/Comba.runs/synth_1
+# Command line: vivado.exe -log Karatsuba_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Karatsuba_1.tcl
+# Log file: C:/Users/gabri/Comba_Karatsuba/Comba.runs/synth_1/Karatsuba_1.vds
+# Journal file: C:/Users/gabri/Comba_Karatsuba/Comba.runs/synth_1\vivado.jou
+# Running On: Gabriel, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16498 MB
+#-----------------------------------------------------------
+source Karatsuba_1.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/gabri/Comba_Karatsuba/Comba.srcs/utils_1/imports/synth_1/Comba.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/gabri/Comba_Karatsuba/Comba.srcs/utils_1/imports/synth_1/Comba.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Karatsuba_1 -part xcku5p-ffvb676-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku5p'
+INFO: [Device 21-403] Loading part xcku5p-ffvb676-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26760
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1858.570 ; gain = 371.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Karatsuba_1' [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Karatsuba_1' (0#1) [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:23]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[8] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[7] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[6] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[5] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[4] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[3] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[2] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+WARNING: [Synth 8-6014] Unused sequential element partialProd_reg[1] was removed.  [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/sources_1/new/Karatsuba_1.v:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1948.012 ; gain = 460.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1948.012 ; gain = 460.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1948.012 ; gain = 460.863
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1948.012 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/constrs_1/new/Karatsuba_Timing.xdc]
+WARNING: [Vivado 12-2489] -period contains time 3.571400 which will be rounded to 3.571 to ensure it is an integer multiple of 1 picosecond [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/constrs_1/new/Karatsuba_Timing.xdc:1]
+Finished Parsing XDC File [C:/Users/gabri/Comba_Karatsuba/Comba.srcs/constrs_1/new/Karatsuba_Timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2044.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2044.414 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2044.414 ; gain = 557.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku5p-ffvb676-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2044.414 ; gain = 557.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2044.414 ; gain = 557.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2044.414 ; gain = 557.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input  128 Bit       Adders := 1     
+	  10 Input  128 Bit       Adders := 1     
+	   2 Input  128 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1824 (col length:96)
+BRAMs: 960 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP c9, operation Mode is: A2*B2.
+DSP Report: register b0_reg is absorbed into DSP c9.
+DSP Report: register a0_reg is absorbed into DSP c9.
+DSP Report: operator c9 is absorbed into DSP c9.
+DSP Report: Generating DSP c2, operation Mode is: A2*B2.
+DSP Report: register a2_reg is absorbed into DSP c2.
+DSP Report: register b3_reg is absorbed into DSP c2.
+DSP Report: operator c2 is absorbed into DSP c2.
+DSP Report: Generating DSP karatsubaProd_reg, operation Mode is: ((D'+A2)*B)'.
+DSP Report: register a0_reg is absorbed into DSP karatsubaProd_reg.
+DSP Report: register a2_reg is absorbed into DSP karatsubaProd_reg.
+DSP Report: register karatsubaProd_reg is absorbed into DSP karatsubaProd_reg.
+DSP Report: operator karatsubaProd0 is absorbed into DSP karatsubaProd_reg.
+DSP Report: operator kSumA is absorbed into DSP karatsubaProd_reg.
+DSP Report: Generating DSP c10, operation Mode is: A2*B2.
+DSP Report: register b1_reg is absorbed into DSP c10.
+DSP Report: register a0_reg is absorbed into DSP c10.
+DSP Report: operator c10 is absorbed into DSP c10.
+DSP Report: Generating DSP c9, operation Mode is: A2*B2.
+DSP Report: register b0_reg is absorbed into DSP c9.
+DSP Report: register a1_reg is absorbed into DSP c9.
+DSP Report: operator c9 is absorbed into DSP c9.
+DSP Report: Generating DSP c8, operation Mode is: A2*B2.
+DSP Report: register b2_reg is absorbed into DSP c8.
+DSP Report: register a0_reg is absorbed into DSP c8.
+DSP Report: operator c8 is absorbed into DSP c8.
+DSP Report: Generating DSP c7, operation Mode is: A2*B2.
+DSP Report: register b1_reg is absorbed into DSP c7.
+DSP Report: register a1_reg is absorbed into DSP c7.
+DSP Report: operator c7 is absorbed into DSP c7.
+DSP Report: Generating DSP c6, operation Mode is: A2*B2.
+DSP Report: register b2_reg is absorbed into DSP c6.
+DSP Report: register a1_reg is absorbed into DSP c6.
+DSP Report: operator c6 is absorbed into DSP c6.
+DSP Report: Generating DSP c5, operation Mode is: A2*B2.
+DSP Report: register a2_reg is absorbed into DSP c5.
+DSP Report: register b1_reg is absorbed into DSP c5.
+DSP Report: operator c5 is absorbed into DSP c5.
+DSP Report: Generating DSP c4, operation Mode is: A2*B2.
+DSP Report: register b3_reg is absorbed into DSP c4.
+DSP Report: register a1_reg is absorbed into DSP c4.
+DSP Report: operator c4 is absorbed into DSP c4.
+DSP Report: Generating DSP c3, operation Mode is: A2*B2.
+DSP Report: register a2_reg is absorbed into DSP c3.
+DSP Report: register b2_reg is absorbed into DSP c3.
+DSP Report: operator c3 is absorbed into DSP c3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 2044.414 ; gain = 557.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Karatsuba_1 | A2*B2        | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | ((D'+A2)*B)' | 24     | 17     | -      | 16     | 42     | 1    | 0    | -    | 1    | 0     | 1    | 0    | 
+|Karatsuba_1 | A2*B2        | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A2*B2        | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 2439.656 ; gain = 952.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2439.656 ; gain = 952.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2456.957 ; gain = 969.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2466.273 ; gain = 979.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2466.273 ; gain = 979.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2466.273 ; gain = 979.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2466.273 ; gain = 979.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2466.273 ; gain = 979.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2466.273 ; gain = 979.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Karatsuba_1 | A'*B'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | (D'+A'*B)'  | 24     | 17     | -      | 16     | 42     | 1    | 0    | -    | 0    | 0     | 0    | 1    | 
+|Karatsuba_1 | A'*B'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 24     | 16     | -      | -      | 40     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|Karatsuba_1 | A'*B'       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |CARRY8          |    53|
+|3     |DSP_ALU         |    11|
+|4     |DSP_A_B_DATA    |    11|
+|6     |DSP_C_DATA      |    11|
+|8     |DSP_MULTIPLIER  |    11|
+|10    |DSP_M_DATA      |    11|
+|11    |DSP_OUTPUT      |    11|
+|13    |DSP_PREADD      |    11|
+|14    |DSP_PREADD_DATA |    11|
+|16    |LUT1            |     1|
+|17    |LUT2            |   167|
+|18    |LUT3            |    86|
+|19    |LUT4            |   126|
+|20    |LUT5            |    25|
+|21    |LUT6            |   113|
+|22    |FDRE            |   216|
+|23    |IBUF            |   129|
+|24    |OBUF            |   128|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2466.273 ; gain = 979.125
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:27 . Memory (MB): peak = 2466.273 ; gain = 882.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2466.273 ; gain = 979.125
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2479.336 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Karatsuba_1' is not ideal for floorplanning, since the cellview 'Karatsuba_1' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2507.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 141 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 11 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 129 instances
+
+Synth Design complete, checksum: f2dfc8e4
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 2507.539 ; gain = 2087.898
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gabri/Comba_Karatsuba/Comba.runs/synth_1/Karatsuba_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Karatsuba_1_utilization_synth.rpt -pb Karatsuba_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  2 05:06:43 2023...
